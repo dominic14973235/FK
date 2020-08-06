@@ -27,6 +27,6 @@ public class Game {
 	private boolean isStrike(int frameIndex) {
 		return rolls[frameIndex] == 10;
 	}
-	system.out.println("AAA");
+	system.out.println("CCC");
 
 }
