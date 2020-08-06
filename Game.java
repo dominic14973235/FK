@@ -1,6 +1,6 @@
 public class Game {
 	private int rolls[] = new int[21];
-	private int currentRoll = 0;
+	private int currentRoll = 1;
 
 	public void roll(int pins) {
 		rolls[currentRoll++] = pins;
@@ -27,21 +27,6 @@ public class Game {
 	private boolean isStrike(int frameIndex) {
 		return rolls[frameIndex] == 10;
 	}
-
-	private int sumOfBallsInFrame(int frameIndex) {
-		return rolls[frameIndex] + rolls[frameIndex + 1];
-	}
-
-	private int spareBonus(int frameIndex) {
-		return rolls[frameIndex + 2];
-	}
-
-	private int strikeBonus(int frameIndex) {
-		return rolls[frameIndex + 1] + rolls[frameIndex + 2];
-	}
-
-	private boolean isSpare(int frameIndex) {
-		return rolls[frameIndex] + rolls[frameIndex + 1] == 10;
-	}
+	system.out.println("AAA");
 
 }
